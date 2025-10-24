@@ -1,0 +1,23 @@
+# Core Discord bot functionality
+discord.py==2.3.2
+
+# HTTP requests (equivalent to 'request' package)
+requests==2.31.0
+
+# Scheduling (equivalent to 'node-schedule')
+APScheduler==3.10.4
+
+# Timezone support (equivalent to 'moment-timezone')
+pytz==2023.3
+
+# Date parsing utilities
+python-dateutil==2.8.2
+
+# Web server (equivalent to 'express')
+Flask==3.0.0
+
+# Environment variables support
+python-dotenv==1.0.0
+
+# Additional utilities
+aiohttp==3.9.1

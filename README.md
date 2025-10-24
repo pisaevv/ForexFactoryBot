@@ -35,7 +35,7 @@ digests.
 ┌───────────────────────────────────────────────────────────────┐
 │  ForexFactory JSON API                                       │
 │     ↓ Fetch + Cache                                          │
-│  Node.js Bot filters for relevant events                     │
+│  Python Bot filters for relevant events                      │
 │     ↓ Scheduled/On-Demand Delivery                           │
 │  Discord Channels                                            │
 └───────────────────────────────────────────────────────────────┘
@@ -53,18 +53,17 @@ cd ForexFactoryBot
 
 2. Install dependencies:
 ```bash
-npm install
+pip install -r requirements.txt
 ```
 
 3. Create a `.env` file:
 ```bash
 BOT_TOKEN=your_discord_bot_token
-PORT=5000
 ```
 
 4. Start the bot:
 ```bash
-node index.js
+python bot.py
 ```
 
 5. Invite the bot to your server with appropriate permissions (`Send 
@@ -80,17 +79,17 @@ If you're a developer looking to contribute:
 2. Clone your fork locally.
 3. Run the dev server:
 ```bash
-npm install
-node index.js
+pip install -r requirements.txt
+python bot.py
 ```
 
 4. Suggested tools:
-   - Node.js `v18` or higher.
-   - `nodemon` for local testing.
+   - Python `3.8` or higher.
+   - Virtual environment for dependency isolation.
 
 All event-fetching logic is cached via `cached_events.json` to reduce 
-unnecessary API calls. Modify the scheduling logic (using `node-schedule`) 
-to suit your timezones or trading habits.
+unnecessary API calls. Modify the scheduling logic to suit your timezones 
+or trading habits.
 
 Any issues can be relayed to me at - pisaevbislan@gmail.com
 
